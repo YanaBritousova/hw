@@ -1,8 +1,13 @@
+package Task1;
+
+import Task1.BrokenLine;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[]args){
+
         System.out.println(BrokenLine.getColor());
 
         List<Point> points = new ArrayList<>();

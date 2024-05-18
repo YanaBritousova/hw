@@ -1,10 +1,11 @@
+package Task1;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class BrokenLine {
     private List<Point> points;
     private static String color = "black";
-
     public static String getColor() {
         return color;
     }
@@ -12,6 +13,7 @@ public class BrokenLine {
     public BrokenLine(List<Point> points) {
         this.points = points;
     }
+
     //Длина всей ломаной
     public double length() {
         double len = 0;
@@ -22,6 +24,7 @@ public class BrokenLine {
         }
         return len;
     }
+
     //Длина ломаной между конкретными точками
    public double length(int numPoint1, int numPoint2){
        double len = 0;
