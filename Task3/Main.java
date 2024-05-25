@@ -34,7 +34,6 @@ public class Main {
         String second = s.nextLine();
         System.out.println("Input third string:");
         String third = s.nextLine();
-
         int firstLen = first.length();
         int secLen = second.length();
         int thirdLen = third.length();
