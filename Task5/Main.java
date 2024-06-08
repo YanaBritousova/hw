@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static List<Employee> filterAge(List<Employee>employees){
-        List<Employee>sortedByAgeEmployees = employees.stream().filter(e->e.getAge()>30).sorted(Comparator.comparing(Employee::getAge)).toList();
+        List<Employee>sortedByAgeEmployees = employees.stream().filter(e->e.getAge()>30).sorted(Comparator.comparing(Employee::getAge)).collect(Collectors.toList());
         return sortedByAgeEmployees;
     }
 
@@ -37,7 +37,7 @@ public class Main {
     }
 
     public static List<String> getHRs(List<Employee>employees){
-        List<String> hrs = employees.stream().filter(e->e.getDepartment().equals("HR")).sorted(Comparator.comparing(Employee::getName)).map(Employee::getName).toList();
+        List<String> hrs = employees.stream().filter(e->e.getDepartment().equals("HR")).sorted(Comparator.comparing(Employee::getName)).map(Employee::getName).collect(Collectors.toList());
         return hrs;
     }
 
